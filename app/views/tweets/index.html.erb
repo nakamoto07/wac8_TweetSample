@@ -3,12 +3,12 @@
     <%=	form_for(@tweet) do |f| %>
       <%= f.text_area :body %>
       <%= f.submit %>
-    <% end %>	
+    <% end %>
 </div>
 <div>
-    <%= @tweets.each do |tweet| %>
+    <% @tweets.each do |tweet| %>
       <div>
       	<%= tweet.body %>
-      </div>      
-    <% end %>	
+      </div>
+    <% end %>
 </div>
